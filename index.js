@@ -1,3 +1,4 @@
+const PORT = process.env.PORT || 8000
 const express = require('express')
 const app = express()
 const cors = require('cors')
@@ -123,14 +124,14 @@ const mountainClimber = {
 app.get("/0", (reg, res) => {
     res.json(
         [exer0 = seilspringen,
-            exer1 = liegestütze,
-            exer2 = plank,
-            exer3 = butterfly,
-            exer4 = winkelziehen,
-            exer5 = schrägBankdrücken,
-            exer6 = langhantelcurl,
-            exer7 = hammercurls,
-            exer8 = kurzhantelcurls,
+        exer1 = liegestütze,
+        exer2 = plank,
+        exer3 = butterfly,
+        exer4 = winkelziehen,
+        exer5 = schrägBankdrücken,
+        exer6 = langhantelcurl,
+        exer7 = hammercurls,
+        exer8 = kurzhantelcurls,
         ]
     )
 })
@@ -151,7 +152,7 @@ app.get("/1", (reg, res) => {
 })
 app.get("/2", (reg, res) => {
     res.json(
-        [   
+        [
             exer0 = seilspringen,
             exer1 = liegestütze,
             exer2 = plank,
@@ -181,7 +182,7 @@ app.get("/3", (reg, res) => {
 })
 app.get("/4", (reg, res) => {
     res.json(
-        [   
+        [
             exer0 = seilspringen,
             exer1 = liegestütze,
             exer2 = plank,
@@ -271,4 +272,4 @@ app.get("/cooldown", (reg, res) => {
         ]
     )
 })
-app.listen(6969)
+app.listen(PORT, () => console.log(`Running on PORT: ${PORT}`))
