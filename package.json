@@ -4,7 +4,7 @@
   "description": "Serve side Trainingsplanner App",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js"
   },
   "author": "Janik Smiko",
   "license": "ISC",
