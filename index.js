@@ -88,7 +88,7 @@ const hammercurls = {
     description: "Bizeps schänden"
 }
 const kurzhantelcurls = {
-    title: "Kurzhantelcurls",
+    title: "Kurz- hantelcurls",
     time: "3 x 10",
     description: "Bizeps stärken"
 }
